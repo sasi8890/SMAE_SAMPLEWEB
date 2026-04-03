@@ -5,26 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SMAE - Society of Mechanical and Automotive Engineers</title>
     <meta name="description" content="India's leading organization for vehicle prototyping, research, component design, training, and motorsports development.">
+    <link rel="icon" href="images/smae_logo.png" type="image/png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="logo">
-        <a href="index.html">
-            <img src="images/smae_logo.png" alt="SMAE Logo" class="logo-img">
-        </a>
-    </div>
-                       
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0" nonce="1b1c"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+
+
+                <a href="index.html"><img src="images/smae_logo.png" alt="SMAE Logo"><span>   SMAE</span></a>
             </div>
             <ul class="nav-links">
-                <li><a href="#trainings">Home</a></li>
-                <li><a href="#trainings">About</a></li>
-                <li><a href="#events">News</a></li>
-                <li><a href="#committee">Training</a></li>
-                <li><a href="#student-corner">Student Corner</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#trainings">Trainings</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#committee">Committee</a></li>
+                <li><a href="#student-corner">Student Corner</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -37,8 +44,8 @@
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="fade-up"> Society of Mechanical <span class="highlight"> and   </span> Automotive Engineers</h1>
-            <p class="fade-up delay-1">WELCOME TO SMAE</p>
+            <h1 class="fade-up"> Society of Mechanical<span class="highlight">&</span> Automotive Engineers </h1>
+            <p class="fade-up delay-1">India's leading organization for vehicle prototyping, research, component design, and motorsports development.</p>
             <div class="hero-buttons fade-up delay-2">
                 <a href="#events" class="btn btn-primary">Explore Events</a>
                 <a href="#trainings" class="btn btn-secondary">Our Trainings</a>
@@ -49,7 +56,8 @@
                 <div class="wheel"></div>
             </div>
         </div>
-     
+    </section>
+
     <!-- News & Activities Section -->
     <section id="news" class="news-section section-padding bg-light">
         <div class="container">
@@ -119,13 +127,11 @@
             </div>
             <div class="about-content">
                 <div class="about-text fade-right">
-                    <p>“Society of Mechanical and Automotive Engineers” challenges the undergraduate and diploma engineers to research and develop innovative projects, inspires them to imagine, as imagination is more important than knowledge.
-                        Knowledge is limited, imagination encircles the world.
-                        Activities organized by “SMAE” give students a chance to form teams and to work for a common goal with a team spirit and to showcase and prove both their creativity and their engineering skills in comparison to the teams from other Universities/Colleges across the country.
-                        Future of a country is highly dependent on the students, so nurturing them is need of the hour.
-                        We make a bridge, which connects the imagination of students to real engineering.
-                        Teams working on a project, learn to research, develop and manage various things not only related to project but also various real life experiences which transforms a student in to a professional, confident enough to knock the doors of industry, that ensures the future of country is bestowed upon the shoulders of young professionals and that is what our aim is.
-                        Theoretical knowledge very much differs with practical orientation. Commitment unlocks the doors of imagination, allows vision, and gives us the right stuff to turn our dreams into reality.</p>
+                    <p>“Society of Mechanical and Automotive Engineers” challenges the undergraduate and diploma engineers to research and develop innovative projects, inspires them to imagine, as imagination is more important than knowledge.</p>
+                    <p> Knowledge is limited, imagination encircles the world. Activities organized by “SMAE” give students a chance to form teams and to work for a common goal with a team spirit and to showcase and prove both their creativity and their engineering skills in comparison to the teams from other Universities/Colleges across the country.</p>
+                    <p> Future of a country is highly dependent on the students, so nurturing them is need of the hour. We make a bridge, which connects the imagination of students to real engineering. Teams working on a project, learn to research, develop and manage various things not only related to project but also various real life experiences which transforms a student in to a professional, confident enough to knock the doors of industry, that ensures the future of country is bestowed upon the shoulders of young professionals and that is what our aim is.</p>
+                     <P>Theoretical knowledge very much differs with practical orientation. Commitment unlocks the doors of imagination, allows vision, and gives us the right stuff to turn our dreams into reality.</p>
+                </div>
                 <div class="about-stats fade-left">
                     <div class="stat-box">
                         <i class="fas fa-car-side"></i>
@@ -242,39 +248,6 @@
         </div>
     </section>
 
-    <!-- Committee Section -->
-    <section id="committee" class="committee section-padding bg-light">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Our Committee</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="committee-grid fade-up">
-                <div class="committee-card">
-                    <img src="https://smae.in/images/committee-img/azeem.jpg" alt="Azeem Mohammed Abdul">
-                    <h3>Azeem Mohammed Abdul</h3>
-                    <p>Co-Founder & Operations Manager, CarJoz.</p>
-                </div>
-                <div class="committee-card">
-                    <img src="https://smae.in/images/committee-img/srijan.jpg" alt="Srijan Rao Polasani">
-                    <h3>Srijan Rao Polasani</h3>
-                    <p>Design Engineer, Collins Aerospace</p>
-                </div>
-                <div class="committee-card">
-                    <img src="https://smae.in/images/committee-img/baradwaj.JPG" alt="Varanasi Venkata Bharadwaj">
-                    <h3>Varanasi Venkata Bharadwaj</h3>
-                    <p>Engineer-Chart Industries Inc</p>
-                </div>
-                <div class="committee-card">
-                    <img src="https://smae.in/images/committee-img/ajay.jpg" alt="Ajay Kumar D">
-                    <h3>Ajay Kumar D</h3>
-                    <p>Senior Engineering Analyst, Oceaneering</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     
     <!-- Sponsors / Partners Section -->
     <section id="sponsors" class="sponsors section-padding">
         <div class="container">
@@ -318,6 +291,71 @@
                     <div class="sponsor-logo"><img src="https://smae.in/images/clients/logo-new4.png" alt="Partner"></div>
                     <div class="sponsor-logo"><img src="https://smae.in/images/clients/logo-new5.png" alt="Partner"></div>
                     <div class="sponsor-logo"><img src="https://smae.in/images/clients/logo-new6.PNG" alt="Partner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Committee Section -->
+    <section id="committee" class="committee section-padding bg-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Committee Members</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="committee-grid">
+                <!-- Azeem -->
+                <div class="committee-card fade-up">
+                    <div class="card-img-wrapper">
+                        <img src="https://smae.in/images/committee-img/azeem.jpg" alt="Azeem Mohammed Abdul">
+                        <div class="social-hover">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Azeem Mohammed Abdul</h3>
+                        <p>Co-Founder & Operations Manager, CarJoz</p>
+                    </div>
+                </div>
+                <!-- Srijan -->
+                <div class="committee-card fade-up delay-1">
+                    <div class="card-img-wrapper">
+                        <img src="https://smae.in/images/committee-img/srijan.jpg" alt="Srijan Rao Polasani">
+                        <div class="social-hover">
+                            <a href="https://www.linkedin.com/in/srijan-rao-polasani-82194b104/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Srijan Rao Polasani</h3>
+                        <p>Design Engineer, Collins Aerospace</p>
+                    </div>
+                </div>
+                <!-- Bharadwaj -->
+                <div class="committee-card fade-up delay-2">
+                    <div class="card-img-wrapper">
+                        <img src="https://smae.in/images/committee-img/baradwaj.JPG" alt="Varanasi Venkata Bharadwaj">
+                        <div class="social-hover">
+                            <a href="https://www.linkedin.com/in/varanasi-bharadwaj-59558577" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Varanasi Venkata Bharadwaj</h3>
+                        <p>Engineer-Chart Industries Inc</p>
+                    </div>
+                </div>
+                <!-- Ajay -->
+                <div class="committee-card fade-up delay-3">
+                    <div class="card-img-wrapper">
+                        <img src="https://smae.in/images/committee-img/ajay.jpg" alt="Ajay Kumar D">
+                        <div class="social-hover">
+                            <a href="https://www.linkedin.com/in/ajay-kumar-d-578230118#search" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>Ajay Kumar D</h3>
+                        <p>Senior Engineering Analyst, Oceaneering</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -372,20 +410,58 @@
         </div>
     </section>
 
+    <!-- Social Media Section -->
+    <section id="social" class="social-section section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Social Media</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="social-grid">
+                <div class="social-widget fade-up">
+                    <div class="widget-header facebook">
+                        <i class="fab fa-facebook-f"></i> Facebook
+                    </div>
+                    <div class="widget-body">
+                        <div class="fb-page" data-href="https://www.facebook.com/smaesociety" data-tabs="timeline" data-width="" data-height="310" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                            <blockquote cite="https://www.facebook.com/smaesociety" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/smaesociety">Society of Mechanical and Automotive Engineers</a></blockquote>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-widget fade-up delay-1">
+                    <div class="widget-header twitter">
+                        <i class="fab fa-twitter"></i> Twitter
+                    </div>
+                    <div class="widget-body">
+                        <a class="twitter-timeline" href="https://twitter.com/SMAE46347992" data-chrome="nofooter" data-link-color="#e70d1f" data-height="310">Tweets by SMAE</a>
+                    </div>
+                </div>
+                
+                <div class="social-widget fade-up delay-2">
+                    <div class="widget-header instagram">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </div>
+                    <div class="widget-body">
+                        <a href="https://instawidget.net/v/user/_s_m_a_e_" id="link-de7aff1700dda24b436ceee37dc88e2825a9780007ad4a1159267594eefb6652">@_s_m_a_e_</a>
+                        <script src="https://instawidget.net/js/instawidget.js?u=de7aff1700dda24b436ceee37dc88e2825a9780007ad4a1159267594eefb6652&width=100%"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer id="contact" class="footer">
         <div class="container footer-content">
             <div class="footer-col">
-                <h3>SMAE</h3>
+                <h3><img src="images/smae_logo.png" alt="SMAE Logo" style="height: 30px; margin-right: 10px; vertical-align: middle;">SMAE</h3>
                 <p>Equipping students with relevant skills & practical exposure through internships, trainings, and competitions in the automotive domain.</p>
                 <div class="social-links">
-                    <a href="https://www.facebook.com/@smaesociety/?hr=1&wtsid=rdr_107hEboCzZ5tbkS4i"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://x.com/SMAE46347992"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/_s_m_a_e_?utm_source=qr&igsh=Y3ZkOWt1NW43OG1w" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                        </a>
-                    <a href="https://www.linkedin.com/in/smae?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><i class="fab fa-linkedin-in"></i></a>
- 
+                    <a href="https://www.facebook.com/smaesociety" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/SMAE46347992" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/_s_m_a_e_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/society-of-mechanical-and-automotive-engineers-86778a149/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="footer-col">
@@ -399,9 +475,9 @@
             </div>
             <div class="footer-col">
                 <h3>Contact Info</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana</p>
-                <p><i class="fas fa-phone"></i> <a href="tel:+ +91-9640-295 295">  +91-9640-295 295</a></p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:contact@smae.in">contact@smae.in</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> 71, Second Floor, 30th Cross, 11th Main Rd, 4th Block, Jayanagar, Bengaluru, Karnataka 560011</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+919560122939">+91-9560122939</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:info@smae.in">info@smae.in</a></p>
             </div>
         </div>
         <div class="footer-bottom">
