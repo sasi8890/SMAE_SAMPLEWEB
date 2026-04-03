@@ -108,13 +108,26 @@ function generateCaptcha() {
     ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     
-    // Generate random alphanumeric string
-    const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghjkmnpqrstuvwxyz23456789';
-    let captchaStr = '';
-    for (let i = 0; i < 6; i++) {
-        captchaStr += chars.charAt(Math.floor(Math.random() * chars.length));
+    // Generate Math Equation
+    const operators = ['+', '-', '*'];
+    const operator = operators[Math.floor(Math.random() * operators.length)];
+    let num1 = Math.floor(Math.random() * 10) + 1;
+    let num2 = Math.floor(Math.random() * 10) + 1;
+    
+    if (operator === '-' && num1 < num2) {
+        // Avoid negative result by swapping
+        let temp = num1;
+        num1 = num2;
+        num2 = temp;
     }
-    captchaResult = captchaStr;
+    
+    let result = 0;
+    if (operator === '+') result = num1 + num2;
+    else if (operator === '-') result = num1 - num2;
+    else if (operator === '*') result = num1 * num2;
+    
+    let captchaStr = `${num1}${operator}${num2}=?`;
+    captchaResult = result.toString();
     
     // Add noise lines
     for (let i = 0; i < 6; i++) {
@@ -129,11 +142,12 @@ function generateCaptcha() {
     // Add text
     ctx.font = 'bold 24px Outfit, sans-serif';
     ctx.textBaseline = 'middle';
+    const spacing = canvas.width / (captchaStr.length + 1);
     for (let i = 0; i < captchaStr.length; i++) {
         ctx.fillStyle = `rgb(${Math.random()*100},${Math.random()*100},${Math.random()*100})`; // Dark text
         ctx.save();
-        ctx.translate(20 + (i * 20), 25);
-        const rotation = (Math.random() - 0.5) * 0.5; // Random rotation
+        ctx.translate(spacing + (i * spacing) - 5, 25);
+        const rotation = (Math.random() - 0.5) * 0.4; // Random rotation
         ctx.rotate(rotation);
         ctx.fillText(captchaStr[i], 0, 0);
         ctx.restore();
