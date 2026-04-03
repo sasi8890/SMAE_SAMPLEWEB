@@ -180,6 +180,17 @@ ul {
     color: var(--text-light);
     letter-spacing: 1px;
 }
+/* Logo Image Styling */
+.logo-img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
 
 .logo span {
     color: var(--primary-color);
